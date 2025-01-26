@@ -1,6 +1,6 @@
 const CACHE_NAME = 'freemarket-cache-v1';
 const urlsToCache = [
-  '/freemarket.html',
+  '/index.html',
   '/manifest.json',
   '/icon-192x192.png',
   '/icon-512x512.png'

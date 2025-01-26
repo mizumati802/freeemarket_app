@@ -1,8 +1,8 @@
 {
   "name": "Freemarket",
   "short_name": "Freemarket",
-  "start_url": "/freemarket.html",
-  "scope": "/freemarket.html",
+  "start_url": "/index.html",
+  "scope": "/index.html",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#ffffff",
