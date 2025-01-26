@@ -1,9 +1,9 @@
 const CACHE_NAME = 'freemarket-cache-v1';
 const urlsToCache = [
-  '/index.html',
-  '/manifest.json',
-  '/icon-192x192.png',
-  '/icon-512x512.png'
+  '/freeemarket_app/index.html',
+  '/freeemarket_app/manifest.json',
+  '/freeemarket_app/icon-192x192.png',
+  '/freeemarket_app/icon-512x512.png'
 ];
 
 self.addEventListener('install', event => {
