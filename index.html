@@ -84,6 +84,33 @@
     .orange {
       background-color: #cc7a56;
     }
+
+    .dashboard_footer_button {
+      position: fixed;
+      bottom: 100px;
+      /* 画面下からの距離 */
+      right: 10px;
+      /* 画面右からの距離 */
+      width: 80px;
+      height: 80px;
+      background-color: #6b90ff;
+      border-radius: 50%;
+      /* ボタンを丸くする */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      /* 見た目を少し立体的に */
+    }
+
+    .dashboard_footer_button button {
+      background: none;
+      border: none;
+      color: #333;
+      font-size: 12pt;
+      font-weight: 800;
+      cursor: pointer;
+    }
   </style>
 </head>
 
@@ -109,6 +136,11 @@
       <button class="button purple" onclick="mercariopenWindow()">メル</button>
     </div>
   </div>
+  <!-- テンプレート表示コンテナ -->
+  <div id="templates-container"></div>
+  <div class="dashboard_footer_button">
+    <button onclick="footer_dashboardbuttonopenWindow()" id="dashboard_footer_button">ダッシュ</button>
+  </div>
 
   <script>
     function mercariopenWindow() {
@@ -120,6 +152,11 @@
           console.log("ウィンドウを開けませんでした（ポップアップがブロックされた可能性があります）。");
         }
       }, 100);
+    }
+
+    //titlebutton
+    function footer_dashboardbuttonopenWindow() {
+      window.open('https://database-app-6ms4.onrender.com/dashboard', '_blank');
     }
   </script>
 </body>
