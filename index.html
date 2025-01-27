@@ -111,6 +111,34 @@
       font-weight: 800;
       cursor: pointer;
     }
+
+
+    .mercari_footer_button {
+      position: fixed;
+      bottom: 10px;
+      /* 画面下からの距離 */
+      right: 10px;
+      /* 画面右からの距離 */
+      width: 80px;
+      height: 80px;
+      background-color: #ff6b6b;
+      border-radius: 50%;
+      /* ボタンを丸くする */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      /* 見た目を少し立体的に */
+    }
+
+    .mercari_footer_button button {
+      background: none;
+      border: none;
+      color: #333;
+      font-size: 18pt;
+      font-weight: 800;
+      cursor: pointer;
+    }
   </style>
 </head>
 
@@ -132,14 +160,14 @@
       <button class="button yellow"
         onclick="window.open('brave://open-url?url=https://mizumati802.github.io/img_merge_dataset/', '_blank')">画像統合</button>
     </div>
-    <div class="grid-item">
-      <button class="button purple" onclick="mercariopenWindow()">メル</button>
-    </div>
   </div>
   <!-- テンプレート表示コンテナ -->
   <div id="templates-container"></div>
   <div class="dashboard_footer_button">
     <button onclick="footer_dashboardbuttonopenWindow()" id="dashboard_footer_button">ダッシュ</button>
+  </div>
+  <div class="mercari_footer_button">
+    <button onclick="footer_mercariopenWindow()" id="mercari_footer_button">メル</button>
   </div>
 
   <script>
